@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Predict Customer Churn</h1>
+    <form id="churnForm">
+        <label for="tenure">Tenure (months):</label>
+        <input type="number" id="tenure" name="tenure" required>
+
+        <label for="monthlyCharges">Monthly Charges ($):</label>
+        <input type="number" id="monthlyCharges" name="monthlyCharges" required>
+
+        <label for="contract">Contract Type:</label>
+        <select id="contract" name="contract">
+            <option value="month-to-month">Month-to-month</option>
+            <option value="one-year">One Year</option>
+            <option value="two-year">Two Year</option>
+        </select>
+
+        <button type="submit">Predict Churn</button>
+    </form>
+    <h2 id="predictionResult"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
